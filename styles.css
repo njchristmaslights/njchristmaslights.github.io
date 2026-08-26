@@ -69,15 +69,6 @@ h2 { margin-bottom: 1.15rem; font-size: clamp(2.2rem, 4vw, 4.45rem); line-height
 .work-grid figure:nth-child(3) { grid-column: span 5; }
 .work-grid figure:nth-child(4), .work-grid figure:nth-child(5) { grid-column: span 6; }
 
-.process { display: grid; grid-template-columns: minmax(16rem, .95fr) minmax(22rem, 1.05fr); margin-top: clamp(4rem, 8vw, 9rem); background: var(--paper); }
-.process-art { min-height: 37rem; background: linear-gradient(0deg, rgba(9,43,34,.48), rgba(9,43,34,.05)), url("assets/holiday-bokeh.jpg") center / cover; }
-.process-copy { padding: clamp(3rem, 6vw, 6rem); }
-.process-copy ol { list-style: none; padding: 0; margin: 2.4rem 0 0; counter-reset: steps; }
-.process-copy li { position: relative; display: grid; grid-template-columns: 1.4rem 1fr; gap: 1.1rem; padding: 1.15rem 0 1.15rem 3.5rem; border-top: 1px solid var(--line); line-height: 1.55; }
-.process-copy li::before { counter-increment: steps; content: "0" counter(steps); position: absolute; left: 0; color: var(--red); font-size: .75rem; font-weight: 800; letter-spacing: .1em; }
-.process-copy li strong { color: var(--ink); }
-.process-copy li span { color: #52625a; }
-
 .quote { display: grid; grid-template-columns: .75fr 1.25fr; gap: clamp(2.5rem, 7vw, 7rem); padding: clamp(4rem, 9vw, 9rem) clamp(1.25rem, 8vw, 10rem); background: var(--green); color: #fff; }
 .quote .eyebrow { color: #e9cb8c; }
 .quote-copy p:not(.eyebrow) { max-width: 28rem; color: rgba(255,255,255,.76); line-height: 1.65; }
@@ -117,9 +108,6 @@ footer a { color: #fff; font-weight: 800; }
   .work-grid { grid-template-columns: 1fr; grid-auto-rows: 17rem; gap: .75rem; }
   .work-grid .work-feature, .work-grid figure:nth-child(n) { grid-column: auto; grid-row: auto; }
   .work-grid .work-feature { min-height: 23rem; }
-  .process { grid-template-columns: 1fr; }
-  .process-art { min-height: 20rem; }
-  .process-copy { padding: 3.5rem 1.35rem; }
   .quote-form { grid-template-columns: 1fr; }
   .full-width { grid-column: auto; }
   footer { padding: 2rem 1.35rem; }
