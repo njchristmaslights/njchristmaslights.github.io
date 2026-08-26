@@ -17,6 +17,7 @@
         "name": "NJ Christmas Lights LLC",
         "description": "Custom Christmas light installation, removal, and storage in Monmouth County, New Jersey.",
         "telephone": "+1-908-892-6802",
+        "email": "NJChristmasLightsContact@gmail.com",
         "areaServed": {
           "@type": "AdministrativeArea",
           "name": "Monmouth County, New Jersey"
@@ -86,6 +87,18 @@
         </article>
       </section>
 
+      <section class="quality" aria-label="Why choose NJ Christmas Lights">
+        <div>
+          <p class="eyebrow">Commercial-grade materials</p>
+          <h2>Built bright. Kept simple.</h2>
+        </div>
+        <div class="quality-points">
+          <p><strong>Minleon C9 lights</strong> are commercial-grade, exceptionally bright, and made to stand up to the season.</p>
+          <p><strong>Free maintenance and replacements</strong> are included if a bulb goes out or a light needs attention.</p>
+          <p><strong>Returning clients save 10%</strong> on future seasons when they store with us.</p>
+        </div>
+      </section>
+
       <section class="work" id="work" aria-labelledby="work-title">
         <div class="work-heading">
           <div>
@@ -122,10 +135,20 @@
         <div class="quote-copy">
           <p class="eyebrow">Free, no-pressure quotes</p>
           <h2 id="quote-title">Let’s light up your home.</h2>
-          <p>Tell us a little about your property and the kind of display you have in mind. Sending the form will open a text message to NJ Christmas Lights LLC.</p>
+          <p>Send your address and wish list. We will return a price and a custom mockup so you can see the finished look before you book.</p>
+          <ol class="quote-process">
+            <li><span>01</span>Quote and custom mockup</li>
+            <li><span>02</span>Choose an install date and reserve it with a 50% deposit</li>
+            <li><span>03</span>We install, then remove after Christmas and collect the remaining balance</li>
+            <li><span>04</span>We store your lights and offer 10% off future seasons</li>
+          </ol>
           <a class="phone-display" href="tel:+19088926802">908-892-6802</a>
+          <a class="email-display" href="mailto:NJChristmasLightsContact@gmail.com">NJChristmasLightsContact@gmail.com</a>
         </div>
-        <form id="quote-form" class="quote-form">
+        <form id="quote-form" class="quote-form" action="https://formsubmit.co/NJChristmasLightsContact@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="New NJ Christmas Lights quote request" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="hidden" name="_captcha" value="false" />
           <label>
             Name
             <input required name="name" autocomplete="name" placeholder="Your name" />
@@ -134,25 +157,34 @@
             Phone
             <input required name="phone" type="tel" autocomplete="tel" placeholder="Best number to reach you" />
           </label>
-          <label>
-            Town
-            <input required name="town" autocomplete="address-level2" placeholder="Your Monmouth County town" />
-          </label>
-          <label>
-            Service
-            <select name="service">
-              <option>Installation</option>
-              <option>Installation + removal</option>
-              <option>Installation + removal + storage</option>
-              <option>Not sure yet</option>
-            </select>
-          </label>
           <label class="full-width">
-            Tell us about your home
-            <textarea name="details" rows="4" placeholder="Roofline, entryway, trees, preferred colors, or anything else helpful."></textarea>
+            Address
+            <input required name="address" autocomplete="street-address" placeholder="Street address, town, and ZIP code" />
+          </label>
+          <fieldset class="full-width">
+            <legend>Budget</legend>
+            <div class="choice-grid budget-grid">
+              <label><input required type="radio" name="budget" value="Less than $1,000" /> <span>Less than $1,000</span></label>
+              <label><input type="radio" name="budget" value="$1,000-$2,000" /> <span>$1,000-$2,000</span></label>
+              <label><input type="radio" name="budget" value="More than $2,000" /> <span>More than $2,000</span></label>
+            </div>
+          </fieldset>
+          <fieldset class="full-width">
+            <legend>Where would you like lights?</legend>
+            <div class="choice-grid">
+              <label><input type="checkbox" name="lighting_areas" value="Roofline" /> <span>Roofline</span></label>
+              <label><input type="checkbox" name="lighting_areas" value="Driveway" /> <span>Driveway</span></label>
+              <label><input type="checkbox" name="lighting_areas" value="Trees and bushes" /> <span>Trees and bushes</span></label>
+              <label><input type="checkbox" name="lighting_areas" value="Walkway" /> <span>Walkway</span></label>
+              <label><input type="checkbox" name="lighting_areas" value="Doorway" /> <span>Doorway</span></label>
+            </div>
+          </fieldset>
+          <label class="full-width">
+            Anything else we should know?
+            <textarea name="details" rows="4" placeholder="Preferred colors, access details, or anything else helpful."></textarea>
           </label>
           <button class="button button-dark" type="submit">Start my free quote</button>
-          <p class="form-note" id="form-note" aria-live="polite">Prefer a direct conversation? Call or text us anytime.</p>
+          <p class="form-note" id="form-note" aria-live="polite">Quote requests are sent directly to our email. Prefer a direct conversation? Call or text us anytime.</p>
         </form>
       </section>
     </main>
@@ -161,6 +193,7 @@
       <img src="assets/njcl-logo.png" alt="NJ Christmas Lights LLC" />
       <p>Monmouth County, New Jersey</p>
       <a href="tel:+19088926802">908-892-6802</a>
+      <a href="mailto:NJChristmasLightsContact@gmail.com">NJChristmasLightsContact@gmail.com</a>
       <p class="footer-small">Installation, removal, and storage.</p>
     </footer>
     <script src="app.js"></script>

@@ -1,18 +1,25 @@
 const quoteForm = document.querySelector("#quote-form");
 const formNote = document.querySelector("#form-note");
 
-quoteForm.addEventListener("submit", (event) => {
+quoteForm.addEventListener("submit", async (event) => {
   event.preventDefault();
-  const details = new FormData(quoteForm);
-  const message = [
-    "Hi NJ Christmas Lights LLC, I would like a free quote.",
-    `Name: ${details.get("name")}`,
-    `Phone: ${details.get("phone")}`,
-    `Town: ${details.get("town")}`,
-    `Service: ${details.get("service")}`,
-    `Details: ${details.get("details") || "Not provided"}`
-  ].join("\n");
+  const button = quoteForm.querySelector("button");
+  button.disabled = true;
+  formNote.textContent = "Sending your quote request...";
 
-  formNote.textContent = "Opening a text message with your quote details...";
-  window.location.href = `sms:+19088926802?body=${encodeURIComponent(message)}`;
+  try {
+    const response = await fetch(quoteForm.action, {
+      method: "POST",
+      body: new FormData(quoteForm),
+      headers: { Accept: "application/json" }
+    });
+
+    if (!response.ok) throw new Error("Quote request failed");
+    quoteForm.reset();
+    formNote.textContent = "Thank you. Your quote request has been sent. We will be in touch soon.";
+  } catch (error) {
+    formNote.textContent = "We could not send that request. Please call, text, or email us directly.";
+  } finally {
+    button.disabled = false;
+  }
 });
