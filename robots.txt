@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://evankelly95.github.io/nj-christmas-lights/sitemap.xml

@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="NJ Christmas Lights LLC provides custom holiday light installation, removal, and storage in Monmouth County, New Jersey. Request a free quote today." />
+    <meta name="theme-color" content="#123e32" />
+    <meta property="og:title" content="NJ Christmas Lights LLC | Monmouth County Holiday Lighting" />
+    <meta property="og:description" content="Custom holiday lighting installation, removal, and storage. Free quotes in Monmouth County, NJ." />
+    <meta property="og:image" content="assets/holiday-bokeh.jpg" />
+    <title>NJ Christmas Lights LLC | Monmouth County Holiday Lighting</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "NJ Christmas Lights LLC",
+        "description": "Custom Christmas light installation, removal, and storage in Monmouth County, New Jersey.",
+        "telephone": "+1-908-892-6802",
+        "areaServed": {
+          "@type": "AdministrativeArea",
+          "name": "Monmouth County, New Jersey"
+        },
+        "serviceType": ["Christmas light installation", "Holiday light removal", "Holiday light storage"],
+        "priceRange": "$$"
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#quote">Skip to quote form</a>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="NJ Christmas Lights home">
+        <img src="assets/njcl-logo.png" alt="NJ Christmas Lights LLC" />
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="#services">Services</a>
+        <a href="#process">How it works</a>
+        <a href="#quote">Free quote</a>
+      </nav>
+      <a class="header-phone" href="tel:+19088926802">Call or text: 908-892-6802</a>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Monmouth County, New Jersey</p>
+          <h1 id="hero-title">A brighter holiday starts at home.</h1>
+          <p class="hero-lede">Custom Christmas light installation, removal, and storage for a polished, stress-free season.</p>
+          <div class="hero-actions">
+            <a class="button button-light" href="#quote">Get a free quote</a>
+            <a class="text-link" href="tel:+19088926802">Call or text 908-892-6802 <span aria-hidden="true">&#8594;</span></a>
+          </div>
+          <p class="hero-note">Residential holiday lighting for homes across Monmouth County.</p>
+        </div>
+        <div class="hero-card" aria-label="Our seasonal services">
+          <span class="card-kicker">Full-service holiday lighting</span>
+          <strong>Design. Install. Enjoy.</strong>
+          <p>When the season ends, we return for removal and storage.</p>
+        </div>
+      </section>
+
+      <section class="intro" id="services" aria-labelledby="services-title">
+        <div>
+          <p class="eyebrow">The easy way to decorate</p>
+          <h2 id="services-title">Holiday lighting handled from start to finish.</h2>
+        </div>
+        <p>We build a lighting plan around your home, handle the setup, and help keep the end of the season simple too.</p>
+      </section>
+
+      <section class="service-grid" aria-label="Services">
+        <article>
+          <span class="service-number">01</span>
+          <h3>Installation</h3>
+          <p>Thoughtful roofline, entry, and exterior lighting installed with care.</p>
+        </article>
+        <article>
+          <span class="service-number">02</span>
+          <h3>Removal</h3>
+          <p>After the holidays, we return to take everything down cleanly and safely.</p>
+        </article>
+        <article>
+          <span class="service-number">03</span>
+          <h3>Storage</h3>
+          <p>Keep the season out of your closets with organized seasonal storage.</p>
+        </article>
+      </section>
+
+      <section class="process" id="process" aria-labelledby="process-title">
+        <div class="process-art" role="img" aria-label="Warm holiday lights background"></div>
+        <div class="process-copy">
+          <p class="eyebrow">Simple from the first call</p>
+          <h2 id="process-title">Three steps to a home that feels ready for the season.</h2>
+          <ol>
+            <li><strong>Tell us about your home.</strong><span>Send a photo or give us a call for a free quote.</span></li>
+            <li><strong>Choose your look.</strong><span>We will align on a clean plan for your exterior.</span></li>
+            <li><strong>Enjoy the season.</strong><span>We handle installation, then return for removal and storage.</span></li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="quote" id="quote" aria-labelledby="quote-title">
+        <div class="quote-copy">
+          <p class="eyebrow">Free, no-pressure quotes</p>
+          <h2 id="quote-title">Let’s light up your home.</h2>
+          <p>Tell us a little about your property and the kind of display you have in mind. Sending the form will open a text message to NJ Christmas Lights LLC.</p>
+          <a class="phone-display" href="tel:+19088926802">908-892-6802</a>
+        </div>
+        <form id="quote-form" class="quote-form">
+          <label>
+            Name
+            <input required name="name" autocomplete="name" placeholder="Your name" />
+          </label>
+          <label>
+            Phone
+            <input required name="phone" type="tel" autocomplete="tel" placeholder="Best number to reach you" />
+          </label>
+          <label>
+            Town
+            <input required name="town" autocomplete="address-level2" placeholder="Your Monmouth County town" />
+          </label>
+          <label>
+            Service
+            <select name="service">
+              <option>Installation</option>
+              <option>Installation + removal</option>
+              <option>Installation + removal + storage</option>
+              <option>Not sure yet</option>
+            </select>
+          </label>
+          <label class="full-width">
+            Tell us about your home
+            <textarea name="details" rows="4" placeholder="Roofline, entryway, trees, preferred colors, or anything else helpful."></textarea>
+          </label>
+          <button class="button button-dark" type="submit">Start my free quote</button>
+          <p class="form-note" id="form-note" aria-live="polite">Prefer a direct conversation? Call or text us anytime.</p>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <img src="assets/njcl-logo.png" alt="NJ Christmas Lights LLC" />
+      <p>Monmouth County, New Jersey</p>
+      <a href="tel:+19088926802">908-892-6802</a>
+      <p class="footer-small">Installation, removal, and storage.</p>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
