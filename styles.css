@@ -55,6 +55,20 @@ h2 { margin-bottom: 1.15rem; font-size: clamp(2.2rem, 4vw, 4.45rem); line-height
 .service-grid h3 { margin-bottom: .7rem; font-family: var(--serif); font-size: 2rem; font-weight: 400; }
 .service-grid p { max-width: 20rem; margin: 0; color: #56665f; line-height: 1.55; }
 
+.work { padding: clamp(4.5rem, 9vw, 9rem) clamp(1.25rem, 5vw, 5rem); }
+.work-heading { display: grid; grid-template-columns: 1.1fr .9fr; gap: 4rem; align-items: end; max-width: 76rem; margin: 0 auto 3rem; }
+.work-heading h2 { max-width: 41rem; margin-bottom: 0; }
+.work-heading > p { max-width: 27rem; margin: 0; color: #52625a; font-size: 1.08rem; line-height: 1.62; }
+.work-grid { display: grid; grid-template-columns: repeat(12, 1fr); grid-auto-rows: 15rem; gap: 1rem; max-width: 100rem; margin: 0 auto; }
+.work-grid figure { position: relative; overflow: hidden; margin: 0; background: var(--evergreen); }
+.work-grid img { display: block; width: 100%; height: 100%; object-fit: cover; transition: transform .45s ease; }
+.work-grid figure:hover img { transform: scale(1.035); }
+.work-grid figcaption { position: absolute; left: 0; right: 0; bottom: 0; padding: 2.4rem 1.25rem 1rem; color: #fff; font-size: .8rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; background: linear-gradient(transparent, rgba(0,0,0,.7)); }
+.work-grid .work-feature { grid-column: span 7; grid-row: span 2; }
+.work-grid figure:nth-child(2) { grid-column: span 5; }
+.work-grid figure:nth-child(3) { grid-column: span 5; }
+.work-grid figure:nth-child(4), .work-grid figure:nth-child(5) { grid-column: span 6; }
+
 .process { display: grid; grid-template-columns: minmax(16rem, .95fr) minmax(22rem, 1.05fr); margin-top: clamp(4rem, 8vw, 9rem); background: var(--paper); }
 .process-art { min-height: 37rem; background: linear-gradient(0deg, rgba(9,43,34,.48), rgba(9,43,34,.05)), url("assets/holiday-bokeh.jpg") center / cover; }
 .process-copy { padding: clamp(3rem, 6vw, 6rem); }
@@ -98,6 +112,11 @@ footer a { color: #fff; font-weight: 800; }
   .service-grid article { min-height: 0; padding: 1.7rem 0; border-right: none; border-bottom: 1px solid var(--line); }
   .service-grid article:last-child { border-bottom: none; }
   .service-number { margin-bottom: 1.5rem; }
+  .work { padding: 4rem 1.35rem; }
+  .work-heading { grid-template-columns: 1fr; gap: 1rem; margin-bottom: 1.5rem; }
+  .work-grid { grid-template-columns: 1fr; grid-auto-rows: 17rem; gap: .75rem; }
+  .work-grid .work-feature, .work-grid figure:nth-child(n) { grid-column: auto; grid-row: auto; }
+  .work-grid .work-feature { min-height: 23rem; }
   .process { grid-template-columns: 1fr; }
   .process-art { min-height: 20rem; }
   .process-copy { padding: 3.5rem 1.35rem; }
