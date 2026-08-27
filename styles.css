@@ -60,14 +60,10 @@ h2 { margin-bottom: 1.15rem; font-size: clamp(2.2rem, 4vw, 4.45rem); line-height
 .work-heading { display: grid; grid-template-columns: 1.1fr .9fr; gap: 4rem; align-items: end; max-width: 76rem; margin: 0 auto 3rem; }
 .work-heading h2 { max-width: 41rem; margin-bottom: 0; }
 .work-heading > p { max-width: 27rem; margin: 0; color: #52625a; font-size: 1.08rem; line-height: 1.62; }
-.work-grid { display: grid; grid-template-columns: repeat(12, 1fr); grid-auto-rows: 15rem; gap: 1rem; max-width: 100rem; margin: 0 auto; }
-.work-grid figure { display: grid; place-items: center; overflow: hidden; margin: 0; background: var(--evergreen); }
-.work-grid img { display: block; width: 100%; height: 100%; object-fit: contain; transition: transform .45s ease; }
-.work-grid figure:hover img { transform: scale(1.025); }
-.work-grid .work-feature { grid-column: span 7; grid-row: span 2; }
-.work-grid figure:nth-child(2) { grid-column: span 5; }
-.work-grid figure:nth-child(3) { grid-column: span 5; }
-.work-grid figure:nth-child(4), .work-grid figure:nth-child(5) { grid-column: span 6; }
+.work-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; max-width: 100rem; margin: 0 auto; }
+.work-grid figure { margin: 0; background: var(--evergreen); }
+.work-grid img { display: block; width: 100%; height: auto; }
+.work-grid .work-feature { grid-column: 1 / -1; }
 
 .quality { display: grid; grid-template-columns: .8fr 1.2fr; gap: clamp(2.5rem, 8vw, 8rem); padding: clamp(4rem, 8vw, 7rem) clamp(1.25rem, 8vw, 10rem); }
 .quality h2 { max-width: 24rem; margin-bottom: 0; }
@@ -122,9 +118,8 @@ footer a { color: #fff; font-weight: 800; }
   .service-number { margin-bottom: 1.5rem; }
   .work { padding: 4rem 1.35rem; }
   .work-heading { grid-template-columns: 1fr; gap: 1rem; margin-bottom: 1.5rem; }
-  .work-grid { grid-template-columns: 1fr; grid-auto-rows: 17rem; gap: .75rem; }
-  .work-grid .work-feature, .work-grid figure:nth-child(n) { grid-column: auto; grid-row: auto; }
-  .work-grid .work-feature { min-height: 23rem; }
+  .work-grid { grid-template-columns: 1fr; gap: .75rem; }
+  .work-grid .work-feature { grid-column: auto; }
   .quote-form { grid-template-columns: 1fr; }
   .full-width { grid-column: auto; }
   footer { padding: 2rem 1.35rem; }
